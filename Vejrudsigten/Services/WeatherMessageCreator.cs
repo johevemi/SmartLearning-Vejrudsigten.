@@ -37,6 +37,15 @@ namespace Vejrudsigten.Services
                 resultTemp = String.Format("{0} med samme temperatur som i går på {1} grader", resultTemp, todayInfoTemperature);
             }
 
+            if (todayInfoTemperature >= 40)
+            {
+                return "Det er alt for varmt";
+            }
+            else if (todayInfoTemperature <= -20)
+            {
+                return "Det er alt for koldt";
+            }
+
             return resultTemp;
         }
     }
