@@ -13,8 +13,9 @@ namespace Vejrudsigten.Services
             var todayInfo = await service.GetTodaysWeather(key, "Kolding");
             var yesterdayInfo = await service.GetYesterdaysWeather(key, "Kolding");
 
-            String result = "Vejret i Kolding er {0} og der er {1} grader. I går var det {2} og {3} grader";
-            return String.Format(result, todayInfo.Conditions, todayInfo.Temperature, yesterdayInfo.Conditions, yesterdayInfo.Temperature);
+            var wmc = new WeatherMessageCreator();
+
+            return wmc.GetWeatherMessage(todayInfo.Conditions, todayInfo.Temperature, yesterdayInfo.Conditions, yesterdayInfo.Temperature);
         }
     }
 }
