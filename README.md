@@ -1,3 +1,4 @@
 # SmartLearning-Vejrudsigten.
+Programmet får information om dagens vejr forhold og temperatur, samt forhold og temperatur for dagen før. Programmet lave en besked ud fra de 4 input på følgende måde, hvis forhold er det samme som i går eller om det er nye forhold, der efter om temperaturen er højere, laver eller den samme som i går. Hvis temperature for i dag er lig med eller højere end 40 grader vil beskeden blive overskrevet med at det er for varmt uanset hvad de andre 3 input er, det samme sker hvis dagens temperature er lig med eller under -20 grader så vil beskeden være det er for koldt.
 ![image](https://user-images.githubusercontent.com/39729843/138594284-c8e6daf8-c94f-4aae-bee2-3d6134dfdb0c.png)
 ![image](https://user-images.githubusercontent.com/39729843/138595368-e0d1590c-dcc7-4293-91d5-70ee162405d3.png)
